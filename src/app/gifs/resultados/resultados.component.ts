@@ -3,15 +3,11 @@ import { GifsService } from '../services/gifs.service';
 
 @Component({
   selector: 'app-resultados',
-  templateUrl: './resultados.component.html'
+  templateUrl: './resultados.component.html',
 })
-export class ResultadosComponent  {
-
-  get resultados(){
+export class ResultadosComponent {
+  get resultados() {
     return this.gifsServie.resultados;
   }
-  constructor(
-    private gifsServie: GifsService
-  ) { }
-
+  constructor(private gifsServie: GifsService) {}
 }
